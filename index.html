@@ -10,43 +10,52 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-
     <title>WebStudio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
-      <nav class="header cursors">
-        <a class="header-logo link" href="">
-          <span class="logo-color">Web</span>Studio
-        </a>
-        <ul class="header-list list">
-          <li class="header-item">
-            <a href="./index.html" class="header-link link color">Студия</a>
+      <div class="container">
+        <nav class="header cursors">
+          <a class="header-logo link" href="">
+            <span class="logo-color">Web</span>Studio
+          </a>
+          <ul class="header-list list">
+            <li class="header-item">
+              <a href="./index.html" class="header-link link color">Студия</a>
+            </li>
+            <li class="header-item">
+              <a href="./portfolio.html" class="header-link link">Портфолио</a>
+            </li>
+            <li class="header-item">
+              <a href="index.html" class="header-link link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-contact list cursors">
+          <li class="header-mailto">
+            <a class="header-link link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
           </li>
-          <li class="header-item">
-            <a href="./portfolio.html" class="header-link link">Портфолио</a>
-          </li>
-          <li class="header-item">
-            <a href="index.html" class="header-link link">Контакты</a>
+          <li class="header-tel">
+            <a class="header-link link" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
-      </nav>
-      <ul class="header-contact list cursors">
-        <li class="header-mailto">
-          <a class="header-link link" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li class="header-tel">
-          <a class="header-link link" href="tel:+380961111111"
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
       <section class="hero">
+        <div class="container">
         <h1 class="hero-title">
           Эффективные решения<br />
           для вашего бизнеса
@@ -54,6 +63,7 @@
         <button class="hero-btn cursors" type="button">Заказать услугу</button>
       </section>
       <section>
+        <div class="hero-content">
         <ul class="hero-list list">
           <li class="hero-item">
             <h3 class="hero-top-text">Внимание к деталям</h3>
@@ -88,8 +98,11 @@
             </p>
           </li>
         </ul>
+        </div>
+        </div>
       </section>
       <section class="about">
+        <div class="container">
         <h2 class="about-title title">Чем мы занимаемся</h2>
         <ul class="aboet-list list">
           <li class="about-item">
@@ -117,8 +130,10 @@
             />
           </li>
         </ul>
+        </div>
       </section>
       <section class="about-team">
+        <div class="container">
         <h2 class="about-team-title title">Наша команда</h2>
         <ul class="about-team-list list">
           <li class="about-team-item">
@@ -162,9 +177,11 @@
             <p class="about-work" lang="en">UI Designer</p>
           </li>
         </ul>
+        </div>
       </section>
     </main>
     <footer class="footer">
+      <div class="container">
       <a class="footer-logo link" href="">
         <span class="logo-color">Web</span>Studio
       </a>
@@ -183,6 +200,7 @@
           >
         </li>
       </ul>
+      </div>
     </footer>
   </body>
 </html>
