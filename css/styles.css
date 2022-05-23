@@ -1,0 +1,203 @@
+:root {
+  --main-btn-color: #ffffff;
+  --second-btm-color: #212121;
+  --main-title-color: #ffffff;
+  --second-title-color: #212121;
+  --third-title-color: #757575;
+  --footer-link-color: rgba(255, 255, 255, 0.6);
+  --accente-color: #2196f3;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: #757575;
+}
+
+/*-----header---------*/
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
+.top-tex {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.head {
+  background-color: #ffffff;
+}
+.cursors {
+}
+
+.logo-color {
+  color: var(--accente-color);
+}
+/*------------------------------------HEADER--------------------*/
+
+.header-link,
+.header-tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+.color {
+  color: var(--accente-color);
+}
+
+.header-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--second-title-color);
+}
+
+.header-link:hover,
+.header-link:focus,
+.header-tel:hover,
+.header-tel:focus {
+  color: var(--accente-color);
+}
+/*------------------------------------HERO--------------------*/
+.hero-btn:focus,
+.hero-btn:hover {
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.hero-btn {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  background-color: var(--accente-color);
+  color: var(--main-btn-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.hero {
+  background-color: #2f303a;
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--main-title-color);
+}
+.btn-title:hover,
+.btn-title:focus {
+  background-color: var(--accente-color);
+  color: var(--main-btn-color);
+}
+.hero-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--third-title-color);
+}
+.hero-top-text {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--second-title-color);
+}
+
+.btn-title {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-title-color);
+}
+/*------------------------------------ABOUT--------------------*/
+
+.about-title {
+  color: var(--second-title-color);
+}
+/*------------------------------------ABOUT TEAM-----------------*/
+.about-team {
+  background-color: #f5f4fa;
+}
+.about-team-title {
+  color: var(--second-title-color);
+}
+.about-img {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-title-color);
+}
+.about-work {
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--third-title-color);
+}
+/*------------------------------------PROJECT-----------------*/
+
+.projects-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--second-title-color);
+}
+.projects-sub-title {
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--third-title-color);
+}
+
+/*------------------------------------FOOTER-----------------*/
+
+.footer {
+  background-color: #2f303a;
+}
+
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--main-title-color);
+}
+.footer-address {
+  font-style: normal;
+  color: var(--main-title-color);
+}
+
+.footer-mailto:hover,
+.footer-mailto:focus,
+.footer-tel:hover,
+.footer-tel:focus {
+  color: var(--footer-link-color);
+}
+.footer-address:hover,
+.footer-address:focus {
+  color: var(--main-btn-color);
+}
+.footer-mailto,
+.footer-tel {
+  color: var(--footer-link-color);
+}
