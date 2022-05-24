@@ -1,3 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+
+* *::before *::after {
+  box-sizing: border-box;
+}
+
 :root {
   --main-btn-color: #ffffff;
   --second-btm-color: #212121;
@@ -45,6 +53,8 @@ img {
 /*-----header---------*/
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .link {
   text-decoration: none;
@@ -107,7 +117,15 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
+.hero-content {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+
 .hero-btn {
+  text-align: center;
+  padding: 10px 32px;
+  min-width: 200px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -117,11 +135,16 @@ img {
   color: var(--main-btn-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: transparent;
 }
 .hero {
   background-color: #2f303a;
+  text-align: center;
 }
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -134,14 +157,30 @@ img {
 .btn-title:focus {
   background-color: var(--accente-color);
   color: var(--main-btn-color);
+  border: var(--accente-color);
+}
+.btn-title {
+  display: inline;
+  border-radius: 4px;
+  padding: 6px 22px;
+  min-width: 73px;
+  text-align: center;
+  border: transparent;
 }
 .hero-text {
+  margin-top: 0;
+  margin-bottom: 10px;
+  min-width: 270px;
+
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--third-title-color);
 }
 .hero-top-text {
+  margin-bottom: 10px;
+  min-width: 270px;
+
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
