@@ -43,15 +43,12 @@ button {
 img {
   display: block;
 }
+
 section {
   display: flex;
   width: 1600px;
-  height: 600p;
   margin: auto;
   justify-content: center;
-}
- {
-  margin-bottom: 0;
 }
 
 .list {
@@ -100,7 +97,6 @@ section {
 /*------------------------------------HEADER--------------------*/
 .header {
   margin: auto;
-  margin-bottom: 94px;
   border: 1px solid #ececec;
   align-items: center;
   width: 1600px;
@@ -189,11 +185,15 @@ section {
 }
 
 .hero-section {
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 34px;
 }
 
 .section-list {
   display: flex;
   justify-content: center;
+  margin-top: 94px;
 }
 
 .btn-item {
@@ -269,7 +269,6 @@ section {
 }
 .btn-title {
   display: inline;
-  margin-bottom: 200px;
   border-radius: 4px;
   padding: 6px 22px;
   min-width: 73px;
@@ -340,32 +339,41 @@ section {
 .about-team {
   width: 1600px;
   height: 648px;
+  margin-left: -30px;
+  padding-left: 15px;
+  padding-right: 15px;
   background: #f5f4fa;
-  justify-content: center;
+}
+
+.team {
+  display: flex;
+  width: 1230px;
+  flex-basis: calc((100% / 4) - 30px);
+  margin-left: 30px;
 }
 
 .about-team-list {
   display: flex;
-
   margin-left: -30px;
-  margin-bottom: 30px;
-
   width: 270px;
   height: 368px;
 }
 
 .about-team-item {
-  flex-basis: calc((100% / 4) - 30px);
-  margin-bottom: 30px;
+  width: calc((100% - 120px) / 4);
   margin-left: 30px;
+
   min-width: 270px;
   min-height: 368px;
-
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+
+/*.about-team-item:not(:last-child) {
+  margin-right: 30px;
+}*/
 
 .about-team-title {
   display: flex;
@@ -396,15 +404,18 @@ section {
 }
 /*------------------------------------PROJECT-----------------*/
 .projects {
+  width: 1230px;
   padding-top: 34px;
+  padding-left: 15px;
+  padding-right: 15px;
   padding-bottom: 94px;
 }
 
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-bottom: -30px;
+  gap: 30px;
+  /* margin: -15px;*/
 }
 
 /*.projects-item:not(:last-child) {
@@ -412,18 +423,32 @@ section {
 }*/
 
 .projects-item {
-  flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
-  margin-bottom: 30px;
+  width: calc((100% - 90px) / 3);
+
+  /*flex-basis: calc(100% / 3 - 30px);
+  margin: 15px;*/
+}
+
+.projects-box {
+  padding: 20px 24px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
 }
 
 .projects-title {
+  min-width: 322px;
+  min-height: 36px;
+
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--second-title-color);
 }
 .projects-sub-title {
+  min-width: 322px;
+  min-height: 30px;
+
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--third-title-color);
