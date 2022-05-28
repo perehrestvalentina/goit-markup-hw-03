@@ -366,10 +366,6 @@ section {
   border-radius: 0px 0px 4px 4px;
 }
 
-/*.about-team-item:not(:last-child) {
-  margin-right: 30px;
-}*/
-
 .about-team-title {
   display: flex;
   margin-bottom: 50px;
