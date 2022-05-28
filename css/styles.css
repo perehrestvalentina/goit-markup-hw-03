@@ -88,8 +88,6 @@ section {
 .head {
   background-color: #ffffff;
 }
-.cursors {
-}
 
 .logo-color {
   color: var(--accente-color);
@@ -321,6 +319,12 @@ section {
   color: var(--second-title-color);
 }
 
+.manager {
+  margin-bottom: 94px;
+  width: 1170px;
+  height: 386px;
+  justify-content: center;
+}
 /*------------------------------------ABOUT TEAM-----------------*/
 
 .about-list {
@@ -338,33 +342,24 @@ section {
 
 .about-team {
   width: 1600px;
-  height: 648px;
-  margin-left: -30px;
+  justify-content: center;
+  padding-top: 94px;
   padding-left: 15px;
   padding-right: 15px;
   background: #f5f4fa;
 }
 
-.team {
-  display: flex;
-  width: 1230px;
-  flex-basis: calc((100% / 4) - 30px);
-  margin-left: 30px;
-}
-
 .about-team-list {
   display: flex;
-  margin-left: -30px;
-  width: 270px;
-  height: 368px;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 94px;
+  text-align: center;
 }
 
 .about-team-item {
-  width: calc((100% - 120px) / 4);
-  margin-left: 30px;
+  flex-basis: calc((100% / 4) - 30px);
 
-  min-width: 270px;
-  min-height: 368px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -377,12 +372,11 @@ section {
 
 .about-team-title {
   display: flex;
-  margin-top: 94px;
   margin-bottom: 50px;
-  justify-content: center;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  justify-content: center;
   color: var(--second-title-color);
 }
 .about-img {
@@ -415,18 +409,10 @@ section {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  /* margin: -15px;*/
 }
-
-/*.projects-item:not(:last-child) {
-  margin-right: 30px;
-}*/
 
 .projects-item {
   width: calc((100% - 90px) / 3);
-
-  /*flex-basis: calc(100% / 3 - 30px);
-  margin: 15px;*/
 }
 
 .projects-box {
