@@ -337,10 +337,8 @@ section {
   color: var(--second-title-color);
 }
 .about-img {
-  font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-title-color);
 }
@@ -353,9 +351,9 @@ section {
 
 .team-desk {
   padding-top: 30px;
-  padding-right: 60px;
+  padding-right: 58px;
   padding-bottom: 30px;
-  padding-left: 60px;
+  padding-left: 58px;
 }
 
 /*------------------------------------PROJECT-----------------*/
