@@ -45,10 +45,7 @@ img {
 }
 
 section {
-  display: flex;
-  width: 1600px;
-  margin: auto;
-  justify-content: center;
+  padding-top: 94px;
 }
 
 .list {
@@ -94,18 +91,12 @@ section {
 }
 /*------------------------------------HEADER--------------------*/
 .header {
-  margin: auto;
-  border: 1px solid #ececec;
-  align-items: center;
-  width: 1600px;
-  height: 80px;
-  background-color: #ffffff;
+  border-bottom: 1px solid #ececec;
 }
 
 .header .container {
   display: flex;
   align-items: center;
-  margin-left: auto;
 }
 
 .header-list {
@@ -119,10 +110,15 @@ section {
 
 .header-nav {
   display: flex;
-  margin-left: auto;
 }
 
 .header-list .header-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -154,12 +150,8 @@ section {
 
 .header-contact {
   display: flex;
-  margin-left: 50px;
-  margin-left: 150px;
+  margin-left: auto;
 }
-/*.header-contact .header-item+.header-item {
-  margin-left: 50px;
-}*/
 
 .header-link:hover,
 .header-link:focus,
@@ -167,17 +159,23 @@ section {
 .header-tel:focus {
   color: var(--accente-color);
 }
-.header-tel {
-  margin-left: 50px;
+
+.header-item:not(:last-child) {
+  margin-right: 50px;
 }
-.header-link {
-  margin-left: 50px;
+
+.header-link:not(:last-child) {
+  margin-right: 50px;
 }
+
+.header-contacts:not(:last-child) {
+  margin-right: 50px;
+}
+
 /*------------------------------------HERO--------------------*/
 .hero {
-  display: flex;
-  width: 1600px;
-  height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: #2f303a;
   text-align: center;
 }
@@ -210,8 +208,6 @@ section {
 
 .hero-list {
   display: flex;
-  margin: 0 auto;
-  justify-content: center;
 }
 
 .hero-btn {
@@ -246,16 +242,14 @@ section {
 }
 
 .hero-item {
-  display: flex;
-  margin: var(--typical-margin);
-  padding: 30px;
-  flex-grow: 1;
-}
-.hero-top-text .hero-text {
-  display: flex;
+  width: 270px;
 }
 
-.hero-text {
+.hero-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.hero-top-text .hero-text {
   display: flex;
 }
 
@@ -274,10 +268,6 @@ section {
   border: transparent;
 }
 .hero-text {
-  margin-top: 0;
-  margin-bottom: 10px;
-  min-width: 270px;
-
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -285,7 +275,6 @@ section {
 }
 .hero-top-text {
   margin-bottom: 10px;
-  min-width: 270px;
 
   font-size: 14px;
   line-height: 1.14;
@@ -304,17 +293,9 @@ section {
   color: var(--second-title-color);
 }
 /*------------------------------------ABOUT--------------------*/
-.about {
-  margin-bottom: 94px;
-  width: 1170px;
-  height: 386px;
-  justify-content: center;
-}
 
 .about-title {
-  display: flex;
   margin-bottom: 50px;
-  justify-content: center;
   text-align: center;
   color: var(--second-title-color);
 }
@@ -329,7 +310,6 @@ section {
 
 .about-list {
   display: flex;
-  margin-bottom: 94px;
   margin-left: -30px;
   font-size: 36px;
   line-height: 1.17;
@@ -341,19 +321,14 @@ section {
 }
 
 .about-team {
-  width: 1600px;
-  justify-content: center;
   padding-top: 94px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-bottom: 94px;
   background: #f5f4fa;
 }
 
 .about-team-list {
   display: flex;
-  flex-wrap: wrap;
   gap: 30px;
-  margin-bottom: 94px;
   text-align: center;
 }
 
@@ -366,7 +341,6 @@ section {
 }
 
 .about-team-title {
-  display: flex;
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
@@ -375,7 +349,6 @@ section {
   color: var(--second-title-color);
 }
 .about-img {
-  margin-top: var(--typical-margin);
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -385,12 +358,19 @@ section {
   color: var(--second-title-color);
 }
 .about-work {
-  margin-bottom: var(--typical-margin);
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--third-title-color);
 }
+
+.team-desk {
+  padding-top: 30px;
+  padding-right: 60px;
+  padding-bottom: 30px;
+  padding-left: 60px;
+}
+
 /*------------------------------------PROJECT-----------------*/
 .projects {
   width: 1230px;
@@ -438,16 +418,9 @@ section {
 /*------------------------------------FOOTER-----------------*/
 
 footer {
-  margin: auto;
-  width: 1600px;
-  height: 252px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #2f303a;
-}
-
-.footer {
-  display: inline-block;
-  margin-top: 60px;
-  margin-left: 215px;
 }
 
 .footer-logo {
@@ -461,9 +434,6 @@ footer {
   color: var(--main-title-color);
 }
 .footer-address {
-  display: flex;
-  padding-top: 9px;
-  padding-bottom: 9px;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -471,17 +441,8 @@ footer {
   color: var(--main-title-color);
 }
 
-.footer-list {
-  display: -ms-inline-flexbox;
-  margin: 0 auto;
-  padding-top: 9px;
-  padding-bottom: 9px;
-}
-.footer-item {
-  display: inline-flexbox;
-  margin: 0 auto;
-  padding-top: 9px;
-  padding-bottom: 9px;
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .footer-mailto:hover,
