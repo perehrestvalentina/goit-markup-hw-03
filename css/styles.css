@@ -48,7 +48,6 @@ img {
 
 section {
   padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .list {
@@ -231,8 +230,6 @@ section {
 }
 
 .hero-title {
-  display: flex;
-  justify-content: center;
   margin-top: 200;
   margin-bottom: 30px;
 
@@ -369,9 +366,9 @@ section {
 
 .team-desk {
   padding-top: 30px;
-  padding-right: 58px;
+  padding-right: 30px;
   padding-bottom: 30px;
-  padding-left: 58px;
+  padding-left: 30px;
 }
 
 /*------------------------------------PROJECT-----------------*/
@@ -403,6 +400,7 @@ section {
 }
 
 .projects-title {
+  margin-bottom: 4px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
