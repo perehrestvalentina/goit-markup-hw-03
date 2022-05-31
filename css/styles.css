@@ -313,6 +313,11 @@ section {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+
+}
+
+.section-work {
+  padding-bottom: 94px;
 }
 
 .about-item {
